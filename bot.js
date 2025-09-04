@@ -20,7 +20,7 @@ const riskPerTrade = parseFloat(process.env.RISK_PER_TRADE || "1");
 const dailyLossCap = parseFloat(process.env.DAILY_LOSS_CAP || "5");
 let dailyLoss = 0;
 const paper = process.env.LIVE !== "true";
-const baseUSDT = parseFloat(process.env.BASE_USDT || "1000");
+const baseUSDT = parseFloat(process.env.BASE_USDT || "100");
 
 console.log(`Bot started on ${exchangeId} for ${symbols.join(", ")} | Paper mode: ${paper}`);
 
