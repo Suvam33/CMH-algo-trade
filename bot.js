@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const exchangeId = process.env.EXCHANGE || "binance";
+const exchangeId = process.env.EXCHANGE || "bitget";
 const exchangeClass = ccxt[exchangeId];
 const exchange = new exchangeClass({
   apiKey: process.env.API_KEY,
